@@ -17,6 +17,45 @@ hr
  border: 0
  background-color: #fff
 
+h1
+ font-weight: 700
+ font-size: 60px
+ color: #fff
+ text-align: left
+ line-height: 71px
+
+h2
+ font-weight: 600
+ font-size: 30px
+ color: #fff
+ line-height: 36px
+
+h3
+ font-weight: 600
+ font-size: 24px
+ color: #fff
+ text-align: left
+ line-height: 32px
+
+h4
+ font-weight: 600
+ font-size: 20px
+ color: #fff
+ line-height: 24px
+
+.caption-1
+ font-weight: 700
+ font-size: 15px
+ color: #8e8e8e
+ line-height: 18px
+
+.counter
+ padding: 4px 8px
+ color: #fff
+ opacity: 1
+ background-color: #2b2b2b
+ border-radius: 8px
+
 //
 // *
 //  border: 1px solid white
@@ -27,12 +66,22 @@ hr
 // .wrapper
 //  border: 2px solid red
 
+// .card-grid
+//  border: 2px solid red
+
 // footer
 //  border: 5px solid cyan
 
+.main-page
+ .grid
+  border: 2px solid red
+  
+  &__card
+   border: 2px solid cyan
 //
 
 body
+ // background-color: #000
  background-color: #1E1E1E
 
 .wrapper
@@ -118,6 +167,7 @@ aside
     color: #fff
     text-decoration: none
     background: #2b2b2b
+    opacity: 1
 
    i
     margin-right: 0
@@ -132,11 +182,6 @@ aside
 
   .counter
    margin-left: auto
-   padding: 4px 8px
-   color: #fff
-   opacity: 1
-   background-color: #2b2b2b
-   border-radius: 8px
  
  .fav
   display: flex
@@ -146,6 +191,7 @@ aside
   
   ul
    list-style-type: none
+   margin-top: 16px
 
    li
     a
@@ -158,7 +204,6 @@ aside
      height: 48px
      opacity: 0.5
      margin-left: -40px
-     margin-top: 16px
      padding-left: 20px
      transition: all 0.2s 0s ease
 
@@ -166,6 +211,7 @@ aside
       color: #fff
       text-decoration: none
       background: #2b2b2b
+      opacity: 1
 
      .body-2
       font-size: 12px
@@ -191,7 +237,6 @@ main
  padding: 0 50px
  display: block
  overflow: hidden
- padding-bottom: 1070px
 
 header
  display: flex
@@ -200,7 +245,7 @@ header
 
  form
   width: 100%
-  max-width: 736px
+  max-width: 500px
   z-index: 1001
   position: relative
 
@@ -261,37 +306,86 @@ header
   //   overflow: hidden
   //   height: 50px
 
+
+.carousel
+ width: 100%
+ border-radius: 5px
+ overflow: hidden
+
+article .title
+ margin-top: 40px
+
+ a
+  line-height: 24px
+  margin-top: 8px
+  text-decoration: none
+
+  &:hover
+   text-decoration: underline
+
+.title
+ display: flex
+ justify-content: space-between
+ align-items: baseline
+ width: 100%
+ margin-bottom: 32px
+
+.main-page
+ .card-grid
+  display: flex
+  justify-content: space-between
+
+  &__item
+   margin: 0 5px
+   width: 300px
+   display: grid
+   border: 1px solid #424242
+   border-radius: 8px
+   height: 352px
+   transition: all 0.2s 0s ease
+   text-decoration: none
+   overflow: hidden
+
+   &:hover
+    transition: all 0.2s 0s ease
+    text-decoration: none
+    border: 1px solid #0d84fb
+
+    .container
+     transition: all 0.2s 0s ease
+     background-color: rgba(0, 0, 0, 0)
+    
+    .text
+     transition: all 0.2s 0s ease
+     display: none
+
+
+   .container
+    padding: 0
+    display: flex
+    flex-direction: column
+    background-color: rgba(0, 0, 0, 0.5)
+
+   .counter
+    margin-right: auto
+    background: #2b2b2bdd
+
+   .text
+    margin-top: auto
+    background-color: rgba(0, 0, 0, 0.75)
+    padding: 10px
+
+   .body-2
+    color: #8e8e8e
+   
+   h4
+    padding-bottom: 5px
+
   
-// footer
-//  position: absolute
-//  bottom: 0
-
-//  width: 50%
-//  max-width: 0 auto
-//  margin-top: 168px
-
-//  padding-bottom: 40px
-
-//  display: flex
-//  justify-content: space-between
-
-// footer
-//  margin-top: 168px
-//  position: absolute
-//  bottom: 0
-//  left: 270px
-//  float: right
-//  right: 50px
-//  left: 270px
-//  max-width: 1170px
-
-//  .container
-//   display: flex
-//   align-items: center
-//   padding: 48px 0
-//   border-top: 1px solid #555
 
 footer
+ margin-top: 100px
+ 
  padding: 0 50px
  display: block
  overflow: hidden
