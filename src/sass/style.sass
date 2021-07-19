@@ -11,7 +11,27 @@
 
 button:hover
  color: #fff
- 
+
+hr
+ height: 2px
+ border: 0
+ background-color: #fff
+
+//
+// *
+//  border: 1px solid white
+
+// main
+//  border: 2px solid red
+
+// .wrapper
+//  border: 2px solid red
+
+// footer
+//  border: 5px solid cyan
+
+//
+
 body
  background-color: #1E1E1E
 
@@ -48,7 +68,6 @@ body
  line-height: 24px
 
 aside
- // border: 1px solid white
  width: 270px
  height: 100%
  z-index: 100
@@ -63,7 +82,7 @@ aside
   margin: 0 40px
 
  .logo
-  padding-top: 38px
+  // padding-top: 38px
   padding-bottom: 40px
   
   a
@@ -169,10 +188,10 @@ aside
    width: 100%
 
 main
- padding-right: 40px
+ padding: 0 50px
  display: block
  overflow: hidden
- padding-bottom: 320px
+ padding-bottom: 1070px
 
 header
  display: flex
@@ -243,3 +262,57 @@ header
   //   height: 50px
 
   
+// footer
+//  position: absolute
+//  bottom: 0
+
+//  width: 50%
+//  max-width: 0 auto
+//  margin-top: 168px
+
+//  padding-bottom: 40px
+
+//  display: flex
+//  justify-content: space-between
+
+// footer
+//  margin-top: 168px
+//  position: absolute
+//  bottom: 0
+//  left: 270px
+//  float: right
+//  right: 50px
+//  left: 270px
+//  max-width: 1170px
+
+//  .container
+//   display: flex
+//   align-items: center
+//   padding: 48px 0
+//   border-top: 1px solid #555
+
+footer
+ padding: 0 50px
+ display: block
+ overflow: hidden
+ 
+ .container
+  display: flex
+  justify-content: space-between
+
+ .left
+  width: 150px
+  display: flex
+  justify-content: space-between
+
+ a
+  text-decoration: none
+
+  span
+   color: #8e8e8e !important
+   white-space: nowrap
+   transition: all 0.2s 0s ease
+
+  &:hover
+   span
+    color: #fff !important
