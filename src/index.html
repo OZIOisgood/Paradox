@@ -6,6 +6,12 @@
 
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	<!-- Link Swiper's CSS -->
+	<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+	/>
  
 	<link rel="stylesheet" href="css/style.min.css">
 
@@ -106,24 +112,27 @@
 				</div>
 				<div class="right">
 					<div class="lang">
-						<i class="fas fa-globe-americas"></i>
-						<span>Eng</span>
+						<i class="fas fa-globe-americas"></i> <span>Eng</span>
 				 </div>
-					<button type="button" class="btn btn-primary">Log in</button>
-				 <!-- <div class="user-menu">
-						<button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-							<img src="#" alt="User avatar">
+					
+					<button type="button" class="btn btn-primary btn-log-in btn-log-in-active">
+						<i class="fas fa-sign-in-alt"></i> Log in
+					</button>
+
+				 <div class="user-menu">
+						<button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="https://lh3.googleusercontent.com/ogw/ADea4I5jdB5r4BKYSC1SQXX7ZAEI_eK4-04SXfwg-2buGg=s83-c-mo" alt="User avatar">
 						</button>
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 							<li><a class="dropdown-item" href="#">Profile</a></li>
 							<li><a class="dropdown-item" href="#">Favorites</a></li>
-							<li><a class="dropdown-item dropdown-item-red" href="#">Выход</a></li>
+							<li><a class="dropdown-item dropdown-item-red btn-log-out" href="#"><i class="fas fa-sign-out-alt"></i> Выход</a></li>
 						</ul>
-		 	 </div> -->
+		 	 </div>
 				</div>
 			</header>
 
-			<div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+			<div class="carousel slide carousel-fade" id="carouselExampleCaptions" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -160,39 +169,109 @@
 				<a href="/programs">See all</a>
 			</div>
 
-			<div class="card-grid">
-				<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
-					<div class="container">
-						<div class="text">
-						 <h4>The Shawshank Redemption (1994)</h4>
-						 <span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
-						</div>
+			<div class="swiper-container mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
+							<div class="container">
+								<div class="text">
+									<h4>The Shawshank Redemption (1994)</h4>
+									<span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
+								</div>
+							</div>
+						</a>
 					</div>
-				</a>
-				<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
-					<div class="container">
-						<div class="text">
-						 <h4>The Shawshank Redemption (1994)</h4>
-						 <span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
-						</div>
+					<div class="swiper-slide">
+						<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
+							<div class="container">
+								<div class="text">
+									<h4>The Shawshank Redemption (1994)</h4>
+									<span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
+								</div>
+							</div>
+						</a>
 					</div>
-				</a>
-				<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
-					<div class="container">
-						<div class="text">
-						 <h4>The Shawshank Redemption (1994)</h4>
-						 <span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
-						</div>
+					<div class="swiper-slide">
+						<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
+							<div class="container">
+								<div class="text">
+									<h4>The Shawshank Redemption (1994)</h4>
+									<span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
+								</div>
+							</div>
+						</a>
 					</div>
-				</a>
-				<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
-					<div class="container">
-						<div class="text">
-						 <h4>The Shawshank Redemption (1994)</h4>
-						 <span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
-						</div>
+					<div class="swiper-slide">
+						<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
+							<div class="container">
+								<div class="text">
+									<h4>The Shawshank Redemption (1994)</h4>
+									<span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
+								</div>
+							</div>
+						</a>
 					</div>
-				</a>
+					<div class="swiper-slide">
+						<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
+							<div class="container">
+								<div class="text">
+									<h4>The Shawshank Redemption (1994)</h4>
+									<span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
+							<div class="container">
+								<div class="text">
+									<h4>The Shawshank Redemption (1994)</h4>
+									<span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
+							<div class="container">
+								<div class="text">
+									<h4>The Shawshank Redemption (1994)</h4>
+									<span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
+							<div class="container">
+								<div class="text">
+									<h4>The Shawshank Redemption (1994)</h4>
+									<span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
+							<div class="container">
+								<div class="text">
+									<h4>The Shawshank Redemption (1994)</h4>
+									<span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="card-grid__item" style="background: url(https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg) no-repeat scroll 50% 50%; background-size: cover;">
+							<div class="container">
+								<div class="text">
+									<h4>The Shawshank Redemption (1994)</h4>
+									<span class="body-2">Two imprisoned men bond over a number of years, finding solace...</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
 		</article>
 
@@ -201,17 +280,30 @@
 			<hr>
 			<div class="container">
 				<div class="left">
-					<a href="#"><span class="body-2">Rools</span></a>
-					<a href="#"><span class="body-2">Reviews</span></a>
+					<a href="#"><span class="body-2"><i class="fas fa-gavel"></i> Rools</span></a>
+					<a href="#"><span class="body-2"><i class="fas fa-comments"></i> Reviews</span></a>
 				</div>
 				<div class="right">
 					<a href="#">
-						<span class="body-2"><b>Paradox</b> team</span>
+						<span class="body-2"><i class="fas fa-users"></i> <b>Paradox</b> team</span>
 					</a>
 				</div>
 			</div>
 		</footer>
 	</div>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<script src="js/script.js"></script>
+
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+			var swiper = new Swiper(".mySwiper", {
+					slidesPerView: 4.10
+			});
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
  </body>
 </html>
